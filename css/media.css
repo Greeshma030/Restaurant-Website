@@ -1,0 +1,151 @@
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+   html {
+       font-size: 15px;
+   }
+
+   #container {
+       width: 25%;
+   }
+
+   #menu div {
+       width: 75%;
+   }
+
+   #about div {
+    width: 75%;
+   }
+
+   #story div {
+    width: 75%;
+   }
+
+   #form, #signup, #login {
+       width: 60%;
+   }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+    #container {
+        width: 100%;
+    }
+
+    #cross {
+        font-size: 2.2em;
+        right: 6vw;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    #navList p {
+        font-size: 1.9em;
+    }
+
+    #menu div {
+        width: 80%;
+    }
+
+    #about div {
+        width: 80%;
+    }
+
+    #story div {
+        width: 80%;
+    }
+
+    #location {
+        top: 170px;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+    #visit {
+        width: 100vw;
+    }
+
+    #location img {
+        width: 100vw;
+    }
+
+    #icon {
+        right: 30px;
+        top: 25px;
+    }
+
+    #icon svg {
+        height: 45px;
+        width: 45px;
+    }
+
+    span {
+        left: 1.3em;
+    }
+
+    #form, #signup, #login {
+        width: 78%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    #container {
+        width: 100%;
+    }
+
+    #cross {
+        font-size: 2.2em;
+        right: 9vw;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    #navList p {
+        font-size: 1.9em;
+    }
+
+    #menu div {
+        width: 80%;
+    }
+
+    #about div {
+        width: 80%;
+    }
+
+    #story div {
+        width: 80%;
+    }
+
+    #location {
+        top: 170px;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+    #visit {
+        width: 100vw;
+    }
+
+    #location img {
+        width: 100vw;
+    }
+
+    #icon {
+        right: 18px;
+        top: 27px;
+    }
+
+    #icon svg {
+        height: 40px;
+        width: 40px;
+    }
+
+    span {
+        left: 1em;
+    }
+
+    #form, #signup, #login {
+        width: 85%;
+    }
+}
