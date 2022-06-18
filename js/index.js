@@ -1,4 +1,5 @@
 let icon = document.getElementById('icon');
+const url = "http://localhost/Restaurant-Website/"
 
 icon.addEventListener('click', () => {
     document.getElementById('container').style.display = "flex";
@@ -13,74 +14,81 @@ cross.addEventListener('click', () => {
 let home = document.getElementById("navList").getElementsByTagName("p")[0];
 
 home.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/";
+    window.location = url;
 });
 
 let about = document.getElementById("navList").getElementsByTagName("p")[1];
 
 about.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/php/about.php";
+    window.location = url + "php/about.php";
 });
 
 let menu = document.getElementById("navList").getElementsByTagName("p")[2];
 
 menu.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/php/menu.php";
+    window.location = url + "php/menu.php";
 });
 
 let contact = document.getElementById("navList").getElementsByTagName("p")[3];
 
 contact.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/php/contact.php";
+    window.location = url + "php/contact.php";
 });
 
 let loc = document.getElementById("navList").getElementsByTagName("p")[4];
 
 loc.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/#location";
+    window.location = url + "#location";
 });
 
 let msg = document.getElementById("navList").getElementsByTagName("p")[5];
 
 msg.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/php/message.php";
+    window.location = url + "php/message.php";
 });
 
-let menutitle = document.getElementById("menustitle").getElementsByTagName("h1")[0];
+let menutitle = document.getElementById("menustitle");
 
-menutitle.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/php/menu.php";
-});
+if (menutitle)
+    menutitle.getElementsByTagName("h1")[0].addEventListener('click', () => {
+        window.location = url + "php/menu.php";
+    });
 
-let abouttitle = document.getElementById("abouttitle").getElementsByTagName("h1")[0];
+let abouttitle = document.getElementById("abouttitle");
 
-abouttitle.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/php/about.php";
-});
+if (abouttitle)
+    abouttitle.getElementsByTagName("h1")[0].addEventListener('click', () => {
+        window.location = url + "php/about.php";
+    });
 
 let logout = document.getElementById('logout');
 
-logout.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/index.php?exit=true";
-});
+if (logout)
+    logout.addEventListener('click', () => {
+        window.location = url + "index.php?exit=true";
+    });
+
 
 let login = document.getElementById('login');
 
-login.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/php/login.php";
-});
+if (login)
+    login.addEventListener('click', () => {
+        window.location = url + "php/login.php";
+    });
+
 
 let span = document.getElementsByTagName("span")[0];
 
 span.addEventListener('click', () => {
-    window.location = "http://localhost/skillvertex/majorproject/";
+    console.log("span")
+    window.location = url;
 });
 
-function story(){
+function story() {
     let ele = document.getElementById('story');
-    if(ele.style.display == "flex"){
+    if (ele.style.display == "flex") {
         ele.style.display = "none";
-    }else{
+    } else {
         ele.style.display = "flex";
-    }  
+    }
 }

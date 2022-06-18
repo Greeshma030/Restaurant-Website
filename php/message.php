@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
         $query = "INSERT INTO messages (username, name, email, number, message) VALUES ('".$uname."', '".$name."', '".$email."', '".$mobile."', '".$msg."')";
         $result = mysqli_query($conn, $query);
         if($result) {
-        echo '<script>window.alert("Message sent Successfully")</script>';
+        header('Location: ../index.php');
         }
 }
 ?>

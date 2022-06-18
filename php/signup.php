@@ -25,7 +25,8 @@ if(isset($_POST['submit']))
         $query = "INSERT INTO users (Username, Email, Password) VALUES ('".$uname."', '".$mailid."', '".$hash."')";
         $result = mysqli_query($conn, $query);
         if($result) {
-        echo '<script>window.alert("Registered Successfully")</script>';
+        $_SESSION['name'] = $uname;
+        header('Location: ../index.php');
         }
     }
 }
